@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="links">
+            <a href="index.html">Google Search</a>
+        </div>
+        <div id="advanced-search-container">
+            <form action="https://www.google.com/search" method="GET">
+                <h1 id="advanced_heading">Advanced Search</h1>
+                <hr>
+                <h2 id="find_heading">Find pages with… </h2>
+                <div class="form-row">
+                    <label for="as_q">“all these words:”</label>
+                    <input type="text" name="as_q" id="as_q" placeholder="Enter terms">
+                </div>
+                
+                <div class="form-row">
+                    <label for="as_epq">“this exact word or phrase:”</label>
+                    <input type="text" name="as_epq" id="as_epq" placeholder="Enter phrase">
+                </div>
+                
+                <div class="form-row">
+                    <label for="as_oq">“any of these words:”</label>
+                    <input type="text" name="as_oq" id="as_oq" placeholder="Enter any terms">
+                </div>
+                
+                <div class="form-row">
+                    <label for="as_eq">“none of these words:”</label>
+                    <input type="text" name="as_eq" id="as_eq" placeholder="Exclude terms">
+                </div>
+                
+                <input type="submit" value="Advanced Search" id="advanced-search-button">
+            </form>
+        </div>
+    </body>
+</html>

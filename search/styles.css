@@ -1,0 +1,109 @@
+/* General styles to body */
+body, button, input, textarea {
+    font-family: 'Google Sans', Arial, sans-serif;
+}
+
+
+/* Styles for the search bar on the index page */
+#search-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Styles for the search input on the index page */
+#search-bar {
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto; /* Centers the search bar */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+/* Styles for buttons on the index page */
+#search-button, #lucky-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+#search-button:hover, #lucky-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Styles for navigation links */
+#links {
+    margin: 10px;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    text-align: right;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+/* Advanced Search Page specific styles */
+#advanced-search-container {
+    text-align: left;
+    margin-left: 5%; /* Center the container */
+    width: 80%;
+    max-width: 800px; /* Max width for larger screens */
+}
+
+/* Flexbox for labels and inputs alignment */
+.form-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Style for labels in the advanced search form */
+.form-row label {
+    margin-right: 20px; /* Space between the label and the input */
+    white-space: nowrap;
+}
+
+/* Style for text inputs in the advanced search form */
+.form-row input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Style for the 'Advanced Search' button */
+#advanced-search-button {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+#advanced-search-button:hover {
+    background-color: #357ae8;
+}
+
+
+#advanced_heading {
+    font-family: 'Google Sans', Arial, sans-serif; 
+    color: #EA4335; 
+    text-align: left;
+    font-size: 24px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+#find_heading {
+    font-family: 'Google Sans', Arial, sans-serif; 
+    text-align: left;
+    font-size: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}

@@ -1,0 +1,32 @@
+{# This line extends the base template, which means it inherits all the structure and elements of "encyclopedia/layout.html" #}
+{% extends "encyclopedia/layout.html" %}
+
+{# This block defines the title of the page in the HTML document's head section #}
+{% block title %}
+    {# The title of the page is set to "Encyclopedia" #}
+    Encyclopedia
+{# End of the title block #}
+{% endblock %}
+
+{# This block defines the main body content of the page #}
+{% block body %}
+    {# This is an HTML heading element (h1), creating a large heading that reads "All Pages" #}
+    <h1>All Pages</h1>
+
+    {# Start of an unordered list, which will contain the list of entries #}
+    <ul>
+        {# Start of a for loop in Django's template language. It iterates over each entry in the 'entries' variable passed from the view #}
+        {% for entry in entries %}
+            {# Each entry in 'entries' is wrapped in a list item tag (li) #}
+            <li>
+                {# Creating a hyperlink (anchor tag) for each entry. The 'href' attribute dynamically creates a link to the entry's page #}
+                {# The '/wiki/{{ entry }}' is the URL pattern, where '{{ entry }}' is replaced by the actual entry name #}
+                <a href="/wiki/{{ entry }}">{{ entry }}</a>
+            </li>
+        {# End of the for loop #}
+        {% endfor %}
+    </ul>
+    {# End of the unordered list #}
+
+{# End of the body block #}
+{% endblock %}
